@@ -38,12 +38,12 @@ a:focus-visible { outline: 1px dashed var(--rust); outline-offset: 4px; }
 .header { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding: 20px 0 15px; border-bottom: 1px solid var(--ink); }
 .site-title { max-width: 45%; font-size: 17px; font-weight: 700; letter-spacing: -.01em; text-decoration: none; line-height: 1.25; }
 nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px 19px; }
-nav a, .links, .eyebrow, .stamp, .caption-label, .intro-footnote, .section-index, .project-number, .project-kind, .stack, .project-links, .project-aside, .research-date, .record-row time, .cf-note .stack, .footer, .contact-links { font-family: "Courier New", Courier, monospace; }
+nav a, .links, .eyebrow, .project-kind, .stack, .project-links, .project-aside, .research-date, .record-row time, .cf-note .stack, .footer, .contact-links { font-family: "Courier New", Courier, monospace; }
 nav a { color: var(--muted); font-size: 13px; text-decoration: none; }
 .intro { padding: 42px 0 24px; border-bottom: 1px solid var(--ink); }
 .intro-layout { display: grid; grid-template-columns: minmax(0, 1fr) 230px; align-items: center; gap: 35px; }
 .eyebrow { display: flex; align-items: center; gap: 9px; margin: 0 0 15px; color: var(--rust); font-size: 11px; letter-spacing: .075em; text-transform: uppercase; }
-.tiny-rule { display: inline-block; width: 23px; height: 1px; background: currentColor; box-shadow: 4px 3px 0 var(--olive); }
+
 .eyebrow-divider { color: var(--muted); }
 .intro h1 { max-width: 680px; margin: 0; font-size: clamp(38px, 5vw, 51px); line-height: 1.08; font-weight: 400; letter-spacing: -.045em; overflow-wrap: normal; }
 .lead { max-width: 650px; margin: 13px 0 0; font-size: clamp(21px, 2.8vw, 29px); line-height: 1.33; letter-spacing: -.022em; }
@@ -53,21 +53,17 @@ nav a { color: var(--muted); font-size: 13px; text-decoration: none; }
 .links { display: flex; flex-wrap: wrap; gap: 8px 17px; margin-top: 19px; font-size: 13px; }
 .links a, .project-links a, .contact-links a { text-decoration-thickness: 1px; text-underline-offset: 4px; }
 .machine-note { margin: 0; color: var(--muted); align-self: center; }
-.stamp { display: inline-block; margin: 0 0 8px; padding: 5px 7px 4px; border: 1px solid var(--rust); color: var(--rust); font-size: 10px; line-height: 1.4; letter-spacing: .07em; text-transform: uppercase; }
-.stamp span { color: var(--muted); }
+
 .machine-note img { display: block; width: 100%; height: auto; }
 .machine-note figcaption { display: flex; flex-direction: column; gap: 3px; margin-top: 5px; padding-top: 7px; border-top: 1px solid var(--rule); line-height: 1.4; }
-.caption-label { color: var(--muted); font-size: 10px; letter-spacing: .07em; text-transform: uppercase; }
-.caption-copy { color: var(--rust); font-size: 15px; font-style: italic; }
-.intro-footnote { display: flex; justify-content: space-between; gap: 20px; margin-top: 28px; padding-top: 10px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 11px; letter-spacing: .025em; }
-.intro-footnote span:first-child { color: var(--rust); white-space: nowrap; }
+
 .section { padding-top: 39px; }
 .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 22px; margin-bottom: 13px; }
 .section-heading h2 { display: flex; align-items: baseline; gap: 10px; margin: 0; font-size: 29px; line-height: 1.17; font-weight: 400; letter-spacing: -.03em; }
 .section-heading > p { margin: 0; max-width: 430px; color: var(--muted); font-size: 14px; text-align: right; }
-.section-index { color: var(--rust); font-size: 12px; letter-spacing: 0; }
+
 .project-row { display: grid; grid-template-columns: 30px minmax(0, 1fr) 145px; gap: 17px; padding: 21px 0 22px; border-top: 1px solid var(--rule); }
-.project-number { color: var(--rust); font-size: 12px; padding-top: 4px; }
+
 .project-main { min-width: 0; }
 .project-title-row { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; }
 .project-main h3 { margin: 0; font-size: 24px; line-height: 1.22; font-weight: 600; letter-spacing: -.02em; }
@@ -80,10 +76,9 @@ nav a { color: var(--muted); font-size: 13px; text-decoration: none; }
 .aside-label { display: block; margin-bottom: 6px; color: var(--olive); font-size: 10px; letter-spacing: .04em; text-transform: uppercase; }
 .project-aside strong { color: var(--rust); font-family: Georgia, "Times New Roman", serif; font-size: 26px; font-weight: 400; line-height: 1.08; margin-top: 4px; }
 .project-aside strong:not(:first-of-type) { margin-top: 10px; }
-.project-aside .aside-note { margin-top: 9px; color: var(--muted); font-size: 11px; }
+
 .aside-rule { width: 100%; height: 1px; margin: 11px 0 4px; background: var(--rule); }
-.workbench-note { display: flex; align-items: flex-start; gap: 11px; margin: 13px 0 0 47px; padding-top: 14px; border-top: 1px dashed var(--rule); max-width: 750px; color: var(--muted); font-size: 15px; font-style: italic; }
-.hand-line { flex: 0 0 30px; margin-top: 12px; height: 1px; background: var(--rust); box-shadow: 5px 3px 0 var(--olive); }
+
 .research-entry { display: grid; grid-template-columns: 145px minmax(0, 1fr); gap: 20px; padding: 19px 0 21px; border-top: 1px solid var(--rule); }
 .research-date { padding-top: 4px; color: var(--rust); font-size: 11px; letter-spacing: .035em; text-transform: uppercase; }
 .research-entry h3 { margin: 0; font-size: 21px; line-height: 1.32; font-weight: 600; }
@@ -94,7 +89,7 @@ nav a { color: var(--muted); font-size: 13px; text-decoration: none; }
 .record-row strong { display: block; font-weight: 600; line-height: 1.42; }
 .record-row span { display: block; margin-top: 3px; color: var(--muted); font-size: 13px; line-height: 1.5; }
 .cf-note { display: grid; grid-template-columns: 70px minmax(0,1fr); gap: 16px; margin-top: 19px; padding: 13px 0 0; border-top: 1px solid var(--ink); }
-.cf-mark { display: flex; flex-direction: column; justify-content: center; align-items: center; border: 1px solid var(--rust); color: var(--rust); font-family: "Courier New", Courier, monospace; font-size: 11px; line-height: 1.3; min-height: 61px; text-align: center; }
+
 .cf-copy h3 { margin: 0; font-size: 18px; font-weight: 600; }
 .cf-copy p:not(.stack) { margin: 5px 0 0; max-width: 730px; color: #4b473f; font-size: 14px; }
 .cf-copy .stack { margin-top: 4px; }
@@ -138,10 +133,10 @@ nav a { color: var(--muted); font-size: 13px; text-decoration: none; }
   .intro h1 { font-size: clamp(34px, 9.5vw, 43px); line-height: 1.08; letter-spacing: -.04em; }
   .lead { font-size: 23px; }
   .machine-note { display: grid; grid-template-columns: minmax(120px, 150px) minmax(0, 1fr); align-items: end; column-gap: 16px; }
-  .stamp { grid-column: 1 / -1; justify-self: start; }
+  
   .machine-note img { width: 100%; }
   .machine-note figcaption { align-self: end; margin-bottom: 7px; }
-  .intro-footnote { flex-direction: column; gap: 4px; }
+  
   .section { padding-top: 32px; }
   .section-heading h2 { font-size: 26px; }
   .project-row { grid-template-columns: 23px minmax(0,1fr); gap: 10px; padding: 17px 0; }
@@ -153,9 +148,9 @@ nav a { color: var(--muted); font-size: 13px; text-decoration: none; }
   .project-aside .aside-label { grid-column: 1 / -1; margin-bottom: 2px; }
   .project-aside strong { margin-top: 2px; }
   .project-aside strong:not(:first-of-type) { margin-top: 5px; }
-  .project-aside .aside-note { grid-column: 1 / -1; }
+  
   .aside-rule { grid-column: 1 / -1; }
-  .workbench-note { margin-left: 0; }
+  
   .research-entry { grid-template-columns: 1fr; gap: 5px; padding: 16px 0; }
   .research-entry h3 { font-size: 19px; }
   .record-row { grid-template-columns: 1fr; gap: 3px; padding: 11px 0; }
@@ -167,19 +162,14 @@ nav a { color: var(--muted); font-size: 13px; text-decoration: none; }
   .contact > p:not(.eyebrow) { font-size: 17px; }
   .footer { flex-direction: column; }
 }
-.research-side-note { margin: 14px 0 0; padding: 12px 0 0 165px; border-top: 1px dashed var(--rule); color: var(--muted); font-size: 14px; }
-.research-side-note span { margin-right: 7px; color: var(--rust); font-family: "Courier New", Courier, monospace; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; }
-@media (max-width: 590px) { .research-side-note { padding-left: 0; } }
 /* Keep the small-print editorial, not tiny. */
 .site-title { max-width: none; white-space: nowrap; }
 .eyebrow { font-size: 12px; }
-.stamp { font-size: 11px; }
-.caption-label { font-size: 11px; }
-.intro-footnote { font-size: 12px; }
+
 .project-kind { font-size: 11px; }
 .project-aside { font-size: 12px; }
 .project-aside .aside-label, .aside-label { font-size: 11px; }
-.project-aside .aside-note { font-size: 12px; }
+
 .research-date { font-size: 12px; }
 .footer { font-size: 12px; }
 @media (max-width: 590px) { .site-title { max-width: 100%; white-space: nowrap; } }
@@ -277,12 +267,8 @@ body::before { display: none; }
 .intro, .contact { border-bottom-color: var(--ink); }
 .project-row, .research-entry, .record-row, .hobby-row, .about-layout, .footer { border-top: 1px dashed rgba(108, 102, 90, .55); }
 .record-list { border-bottom: 1px dashed rgba(108, 102, 90, .55); }
-.intro-footnote { border-top: 1px dashed rgba(108, 102, 90, .55); }
 
 /* handwritten annotations */
-.caption-copy, .workbench-note, .aside-note { font-family: var(--hand); font-style: normal; }
-.caption-copy { font-size: 18px; line-height: 1.25; transform: rotate(-1deg); display: inline-block; }
-.workbench-note { font-size: 19px; line-height: 1.4; color: #5a5446; }
 
 /* section titles get a highlighter swipe */
 .section-heading h2 {
@@ -311,7 +297,6 @@ body::before { display: none; }
   transform: rotate(-4deg);
   clip-path: polygon(0 0, 4% 15%, 0 30%, 4% 45%, 0 60%, 4% 75%, 0 100%, 100% 100%, 96% 75%, 100% 60%, 96% 45%, 100% 30%, 96% 15%, 100% 0);
 }
-.stamp { transform: rotate(-3deg); background: rgba(249, 242, 223, .6); }
 
 /* stats become sticky notes */
 .project-row { grid-template-columns: 30px minmax(0, 1fr) 170px; gap: 20px; }
@@ -353,7 +338,6 @@ body::before { display: none; }
   box-shadow: 0 1px 2px rgba(0,0,0,.16), 0 8px 16px -6px rgba(40,30,10,.32);
   transform: rotate(.4deg);
 }
-.cf-mark { background: rgba(255,255,255,.4); transform: rotate(-3deg); }
 
 /* contact: tear-off strip */
 .contact { position: relative; border-top: 2px dashed rgba(108, 102, 90, .7); margin-top: 52px; }
@@ -391,7 +375,7 @@ body::before { display: none; }
   .intro-layout { grid-template-columns: minmax(0,1fr); }
   .machine-note { transform: rotate(.8deg); max-width: 330px; margin: 6px 4px 0; }
   .project-row { grid-template-columns: 1fr; gap: 8px; }
-  .project-number { display: none; }
+  
   .project-aside { grid-column: 1; margin-top: 8px; padding: 10px 12px; }
   .skills-note { padding: 14px 14px 8px; }
   .cf-note { padding: 14px; }
@@ -462,11 +446,7 @@ a:hover { color: var(--rust); }
 .page::before, .page::after, .header::before, .header::after, .contact::before, .machine-note::before { display: none; }
 
 /* labels switch from typewriter to sans caps */
-nav a, .links, .eyebrow, .stamp, .caption-label, .intro-footnote, .section-index, .project-number, .project-kind,
-.stack, .project-links, .project-aside, .research-date, .record-row time, .cf-note .stack, .footer, .contact-links,
-.research-side-note span, .cf-mark, .aside-label { font-family: var(--sans); }
-
-/* masthead */
+nav a, .links, .eyebrow, .project-kind, .stack, .project-links, .project-aside, .research-date, .record-row time, .cf-note .stack, .footer, .contact-links, /* masthead */
 .header { padding: 22px 0 14px; border-top: 6px solid var(--ink); border-bottom: 1px solid var(--ink); align-items: center; }
 .site-title { font-family: var(--sans); font-size: 20px; font-weight: 900; letter-spacing: .02em; text-transform: uppercase; }
 nav { gap: 6px 22px; }
@@ -476,7 +456,7 @@ nav a:hover { color: var(--rust); }
 /* headline block */
 .intro { padding: 40px 0 34px; border-bottom: 1px solid var(--rule); }
 .eyebrow { color: var(--rust); font-size: 12px; font-weight: 700; letter-spacing: .14em; }
-.tiny-rule { display: none; }
+
 .intro h1 { font-size: clamp(40px, 6vw, 62px); font-weight: 700; line-height: 1.04; letter-spacing: -.035em; }
 .lead { margin-top: 14px; color: #444; font-size: clamp(20px, 2.5vw, 26px); font-weight: 400; line-height: 1.35; }
 .lead::first-letter { color: inherit; }
@@ -490,9 +470,6 @@ nav a:hover { color: var(--rust); }
 /* illustration: framed print, no tape or tilt */
 .machine-note { padding: 0; background: none; box-shadow: none; transform: none; }
 .machine-note img { border: 1px solid var(--ink); }
-.stamp { transform: none; background: none; border-color: var(--ink); color: var(--ink); font-weight: 700; }
-.caption-copy { transform: none; font-family: var(--hand); font-style: italic; font-size: 16px; color: var(--muted); }
-.intro-footnote { border-top: 1px solid var(--rule); }
 
 /* section headings: heavy rule + uppercase label, like Lit Hub's widgets */
 .section { padding-top: 56px; }
@@ -506,7 +483,7 @@ nav a:hover { color: var(--rust); }
 .project-main h3 { font-size: 28px; line-height: 1.15; }
 .project-main h3 a, .research-entry h3 a { text-decoration: none; }
 .project-main h3 a:hover, .research-entry h3 a:hover { text-decoration: underline; text-decoration-color: var(--rust); text-decoration-thickness: 2px; }
-.project-kind, .research-date, .record-row time, .project-number { color: var(--rust); font-weight: 700; letter-spacing: .1em; }
+.project-kind, .research-date, .record-row time { color: var(--rust); font-weight: 700; letter-spacing: .1em; }
 .project-main p:not(.stack):not(.project-links), .research-entry p:not(.stack), .hobby-row p, .cf-copy p:not(.stack) { color: #222; }
 .stack { color: var(--muted); font-size: 11.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .record-row strong { font-weight: 700; }
@@ -521,13 +498,11 @@ nav a:hover { color: var(--rust); }
 .project-aside .aside-label, .aside-label { color: var(--ink); font-weight: 900; letter-spacing: .12em; }
 .project-aside strong { font-family: Georgia, serif; font-weight: 700; font-size: 30px; color: var(--ink); }
 .aside-rule { background: var(--rule); }
-.project-aside .aside-note, .workbench-note { font-family: var(--hand); font-style: italic; color: var(--muted); }
 
 /* skills + Codeforces cards: flat boxes with a heavy top rule */
 .skills-note, .cf-note { background: none; box-shadow: none; transform: none; border-left: 0; border-top: 4px solid var(--ink); padding: 14px 0 6px; }
 .cf-note { padding: 14px 0 0; }
 .skills-note p:not(.aside-label) { font-size: 15px; }
-.cf-mark { background: none; transform: none; border-color: var(--ink); color: var(--ink); }
 
 /* contact */
 .contact { margin-top: 64px; border-top: 4px solid var(--ink); }
@@ -570,7 +545,6 @@ nav { width: 100%; justify-content: center; gap: 6px 28px; padding: 11px 0; bord
 .intro-copy { max-width: 680px; text-align: left; }
 .links { justify-content: center; }
 .machine-note { width: 240px; max-width: 100%; }
-.intro-footnote { justify-content: center; }
 
 /* section labels flanked by rules */
 .section-heading { justify-content: center; border-top: 0; padding-top: 0; margin-bottom: 26px; }
@@ -707,7 +681,7 @@ nav a [lang="bn"] { margin-left: 3px; color: var(--rust); font-size: 15px; font-
 /* hero */
 .eyebrow [lang="bn"] { font-size: 16px; font-weight: 600; }
 .eyebrow-divider { margin: 0 2px; }
-.lead-bn { max-width: 650px; margin: 10px auto 0; color: var(--rust); font-family: var(--bn-display); font-size: clamp(18px, 2.2vw, 22px); line-height: 1.6; }
+
 .byline [lang="bn"] { font-size: 14px; font-weight: 500; }
 .varnamala { margin-top: 10px; text-align: center; color: var(--rust); font-family: var(--bn-display) !important; font-size: 22px; word-spacing: .35em; }
 

@@ -752,3 +752,8 @@ h3 a [lang="bn"] { font-family: var(--bn-display); }
   .about-layout { grid-template-columns: 1fr; }
   .portrait { width: 120px; }
 }
+
+/* v5: quieter masthead */
+.site-title .wordmark { font-size: clamp(28px, 4vw, 40px); text-shadow: 2px 2px 0 rgba(200, 32, 47, .55); }
+.site-title small { font-size: 10px; letter-spacing: .26em; }
+@media (max-width: 590px) { .site-title .wordmark { font-size: 30px; text-shadow: 1px 1px 0 rgba(200, 32, 47, .55); } }

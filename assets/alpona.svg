@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 34" width="120" height="34">
+  <!-- nakshi-kantha style stitched diamond chain; tiles seamlessly -->
+  <g fill="none" stroke="#c8202f" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 17 H20" stroke-dasharray="3 3"/>
+    <path d="M100 17 H120" stroke-dasharray="3 3"/>
+    <path d="M60 5 L82 17 L60 29 L38 17 Z"/>
+    <path d="M60 10.5 L72 17 L60 23.5 L48 17 Z"/>
+    <path d="M38 17 H20" />
+    <path d="M82 17 H100"/>
+  </g>
+  <g fill="#c8202f"><rect x="57.5" y="14.5" width="5" height="5" transform="rotate(45 60 17)"/></g>
+  <g fill="#111"><circle cx="10" cy="11" r="1"/><circle cx="10" cy="23" r="1"/><circle cx="110" cy="11" r="1"/><circle cx="110" cy="23" r="1"/></g>
+</svg>

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shafayat Hasanat Rubaiyat. Recent CSE graduate interested in software engineering, research, systems, algorithms, and multilingual NLP.">
+  <meta name="theme-color" content="#77745b">
+  <title>Shafayat Hasanat Rubaiyat | work & notes</title>
+  <link rel="canonical" href="https://infi9itea.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shafayat Hasanat Rubaiyat | work & notes">
+  <meta property="og:description" content="Recent CSE graduate interested in software engineering, research, systems, algorithms, and multilingual NLP.">
+  <meta property="og:url" content="https://infi9itea.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="header">
+      <a class="site-title" href="#top" aria-label="Shafayat Hasanat Rubaiyat, home">Shafayat Hasanat Rubaiyat</a>
+      <nav aria-label="Main navigation">
+        <a href="#work">work</a>
+        <a href="#research">research</a>
+        <a href="#record">record</a>
+        <a href="#hobbies">hobbies</a>
+        <a href="#about">about</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="top" class="intro" aria-labelledby="intro-title">
+        <div class="intro-layout">
+          <div class="intro-text">
+            <p class="eyebrow">Dhaka, Bangladesh</p>
+            <h1 id="intro-title">Shafayat Hasanat Rubaiyat</h1>
+            <p class="lead">I like making things with computers, and finding out if they actually work.</p>
+            <div class="intro-copy">
+              <p>I recently graduated in Computer Science &amp; Engineering from East West University. I’m looking for an entry-level software engineering role, and I’m interested in research too.</p>
+              <p>Lately, I’ve been working around backend reliability, retrieval systems, and language tools for English, Bangla and Banglish. I like building a thing, measuring it, and writing down what the experiment really says.</p>
+            </div>
+            <p class="links" aria-label="External profiles">
+              <a href="https://github.com/infi9itea" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+              <a href="https://www.linkedin.com/in/infi9itea/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+              <a href="https://codeforces.com/profile/Centric" target="_blank" rel="noopener noreferrer">Codeforces <span aria-hidden="true">↗</span></a>
+              <a href="mailto:shafayatrubath@gmail.com">Email <span aria-hidden="true">↗</span></a>
+            </p>
+          </div>
+          <figure class="machine-note">
+            <img src="assets/rooftop-machine.svg" alt="An original hand-drawn scene of crooked rooftops, pipes, a little rooftop machine, a castle tower and a knight in armour">
+          </figure>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="section-heading">
+          <h2>Workbench</h2>
+        </div>
+
+        <article class="project-row">
+          <div class="project-main">
+            <div class="project-title-row">
+              <h3><a href="https://github.com/infi9itea/Teslap" target="_blank" rel="noopener noreferrer">Teslap</a></h3>
+              <span class="project-kind">software systems</span>
+            </div>
+            <p>A ride-pooling MVP for Dhaka. It matches overlapping ride requests, splits fares down to the paisa, and gives drivers a manifest to work from.</p>
+            <p>The difficult part was the last seat: two passengers might try to claim it at once. I used PostgreSQL row locking, idempotency keys and a database capacity trigger, then tested the race instead of trusting the happy path.</p>
+            <p class="stack">Next.js · TypeScript · Express · PostgreSQL · Prisma · Docker</p>
+            <p class="project-links"><a href="https://github.com/infi9itea/Teslap" target="_blank" rel="noopener noreferrer">source ↗</a><a href="https://teslap.vercel.app" target="_blank" rel="noopener noreferrer">live demo ↗</a></p>
+          </div>
+          <aside class="project-aside" aria-label="Teslap details">
+            <span class="aside-label">tested in code</span>
+            <strong>14</strong><span>REST endpoints</span>
+            <strong>8</strong><span>Prisma models</span>
+            <strong>43</strong><span>Jest tests</span>
+          </aside>
+        </article>
+
+        <article class="project-row">
+          <div class="project-main">
+            <div class="project-title-row">
+              <h3><a href="https://github.com/infi9itea/ragtop" target="_blank" rel="noopener noreferrer">RAGTOP</a></h3>
+              <span class="project-kind">retrieval &amp; evaluation</span>
+            </div>
+            <p>A laptop recommendation pipeline built from multiple product sources, schema harmonisation, PySpark processing, embeddings and MinHash/LSH deduplication.</p>
+            <p>I compared five FAISS index types. On the exact-search comparison, HNSW recovered 84.7% of exact top-five results at 0.116 ms average query latency. On a separate 30-query labelled set, hit rate was 0.60 and precision@5 was 0.253.</p>
+            <p class="stack">Python · PySpark · FAISS · embeddings · MinHash/LSH</p>
+            <p class="project-links"><a href="https://github.com/infi9itea/ragtop" target="_blank" rel="noopener noreferrer">source &amp; experiments ↗</a></p>
+          </div>
+          <aside class="project-aside" aria-label="RAGTOP details">
+            <span class="aside-label">the dataset</span>
+            <strong>1,960</strong><span>laptop configurations</span>
+            <span class="aside-rule"></span>
+            <strong>84.7%</strong><span>recall@5 vs. exact search</span>
+          </aside>
+        </article>
+
+        <article class="project-row">
+          <div class="project-main">
+            <div class="project-title-row">
+              <h3><a href="https://github.com/infi9itea/Probaho" target="_blank" rel="noopener noreferrer">Probaho</a></h3>
+              <span class="project-kind">multilingual NLP</span>
+            </div>
+            <p>A university-information chatbot for English, Bangla and Banglish, built end to end as a solo project. I designed and implemented the RAG pipeline (ingestion, retrieval and the LLM answer service) and built the knowledge base.</p>
+            <p class="stack">Python · Rasa · FastAPI · RAG · LLMs</p>
+            <p class="project-links"><a href="https://github.com/infi9itea/Probaho" target="_blank" rel="noopener noreferrer">source ↗</a></p>
+          </div>
+        </article>
+
+        <article class="project-row">
+          <div class="project-main">
+            <div class="project-title-row">
+              <h3><a href="https://github.com/infi9itea/olikbochon-bengali-hallucination-datathon-" target="_blank" rel="noopener noreferrer">অলীকবচন / Olikbochon</a></h3>
+              <span class="project-kind">applied research</span>
+            </div>
+            <p>A Bengali-language hallucination detection system I built on my own. It combines lexical overlap, character-level TF-IDF, answer-key matching and cross-lingual NLI using mDeBERTa-v3.</p>
+            <p>I combined the signals with Logistic Regression and LightGBM, using a quantized 32B Qwen model as a judge. The pipeline reached 0.794 out-of-fold macro-F1 on the labelled sample.</p>
+            <p class="stack">Python · LightGBM · vLLM · NLI · TF-IDF</p>
+            <p class="project-links"><a href="https://github.com/infi9itea/olikbochon-bengali-hallucination-datathon-" target="_blank" rel="noopener noreferrer">source ↗</a></p>
+          </div>
+          <aside class="project-aside" aria-label="Olikbochon details">
+            <span class="aside-label">validation note</span>
+            <strong>0.794</strong><span>out-of-fold macro-F1</span>
+          </aside>
+        </article>
+
+        <article class="project-row">
+          <div class="project-main">
+            <div class="project-title-row">
+              <h3><a href="https://github.com/infi9itea/RepoQuest" target="_blank" rel="noopener noreferrer">RepoQuest</a></h3>
+              <span class="project-kind">developer tools</span>
+            </div>
+            <p>A guide for getting into unfamiliar codebases. Paste a public GitHub repository and it generates three developer quests, each with a goal, steps, success criteria and links to relevant source files and real issues.</p>
+            <p>An n8n workflow gathers the evidence (metadata, README, file paths, open issues) and Gemini writes the quests. The response is validated, including the source-file paths, before it reaches the UI. It is a working prototype, and quest quality depends on how much evidence a repository offers.</p>
+            <p class="stack">Next.js · TypeScript · n8n · Gemini API · GitHub REST API</p>
+            <p class="project-links"><a href="https://github.com/infi9itea/RepoQuest" target="_blank" rel="noopener noreferrer">source ↗</a><a href="https://repo-quest-five.vercel.app" target="_blank" rel="noopener noreferrer">live demo ↗</a></p>
+          </div>
+        </article>
+      </section>
+
+      <section id="research" class="section">
+        <div class="section-heading">
+          <h2>Research notes</h2>
+        </div>
+        <article class="research-entry">
+          <span class="research-date">28th ICCIT · 2025</span>
+          <div>
+            <h3><a href="https://doi.org/10.1109/ICCIT68739.2025.11491434" target="_blank" rel="noopener noreferrer">A Hybrid Deep Learning Framework for 44-Class Brain Tumor Classification</a></h3>
+            <p>A ResNet50-DenseNet121 hybrid CNN for classifying brain tumours from MRI images. The paper reported 98.69% test accuracy on a 44-class setup using 16,236 augmented MRI images.</p>
+            <p class="stack">first-author paper · IEEE conference publication · computer vision · deep learning · <a href="https://doi.org/10.1109/ICCIT68739.2025.11491434" target="_blank" rel="noopener noreferrer">DOI ↗</a> · <a href="https://github.com/infi9itea/btc44" target="_blank" rel="noopener noreferrer">code ↗</a></p>
+          </div>
+        </article>
+        <article class="research-entry">
+          <span class="research-date">in progress</span>
+          <div>
+            <h3>Comparing multilingual university chatbots</h3>
+            <p>I’m studying domain-specific chatbot approaches across English, Bangla and Banglish: how retrieval, fine-tuning and model scale affect answer quality, and whether a system stays consistent across languages.</p>
+            <p class="stack">retrieval-augmented generation · small language models · evaluation</p>
+          </div>
+        </article>
+      </section>
+
+      <section id="record" class="section">
+        <div class="section-heading">
+          <h2>Contest record</h2>
+        </div>
+        <div class="record-list">
+          <div class="record-row"><time datetime="2026-10">Oct 2026</time><div><strong>Qualified for Round 2: Meta Hacker Cup 2026</strong><span>Meta Hacker Cup</span></div></div>
+          <div class="record-row"><time datetime="2026-08">Aug 2026</time><div><strong>23rd in Bangladesh: ICPC Online Challenge 1, powered by Huawei</strong><span>International Collegiate Programming Contest</span></div></div>
+          <div class="record-row"><time datetime="2026-07">Jul 2026</time><div><strong>75th out of 230 teams: IUT Datathon 2026</strong><span>Team 404 not found</span></div></div>
+          <div class="record-row"><time datetime="2026-06">Jun 2026</time><div><strong>49th out of 140 teams: DUET IUPC 2026</strong><span>Team EWU_ShaFaR</span></div></div>
+          <div class="record-row"><time datetime="2025-12">Dec 2025</time><div><strong>19th out of 76 teams: BUBT IUCPC 2025</strong><span>Team EWU_FALL2022</span></div></div>
+          <div class="record-row"><time datetime="2025-12">Dec 2025</time><div><strong>ICPC Dhaka Regional 2025</strong><span>Competed with East West University’s team EWU_FALL2022</span></div></div>
+          <div class="record-row"><time datetime="2025-08">Aug 2025</time><div><strong>7th place: EWU Solo IUPC, Senior Division</strong><span>East West University</span></div></div>
+          <div class="record-row"><time>academic</time><div><strong>Medha Lalon Dean’s List ×2</strong><span>East West University</span></div></div>
+        </div>
+        <div class="cf-note">
+          <div class="cf-copy"><h3><a href="https://codeforces.com/profile/Centric" target="_blank" rel="noopener noreferrer">Centric on Codeforces ↗</a></h3><p>Current rating 1290 · peak 1300 · Pupil. Roughly top 39%, interpolated from a 2026 rating-distribution analysis of recently active users; this is an estimate, not an official live rank.</p><p class="stack"><a href="https://codeforces.com/blog/entry/151862" target="_blank" rel="noopener noreferrer">rating-distribution source ↗</a></p></div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-heading">
+          <h2>A little about me</h2>
+        </div>
+        <div class="about-layout">
+          <div>
+            <p>I graduated from East West University in August 2026 with a B.Sc. in Computer Science &amp; Engineering and a CGPA of 3.66/4.00.</p>
+            <p>Outside of coursework I’ve taken part in math olympiads and play CTFs (capture-the-flag security competitions). I like problems with a clean answer that still has to be found.</p>
+            <p>I’m not a software engineer yet; I’m looking for that first opportunity. I want to work with people who care about clean systems, thoughtful experiments, and things that are useful after the demo is over.</p>
+          </div>
+          <div class="skills-note">
+            <p class="aside-label">tools I reach for</p>
+            <p><strong>Languages</strong> Python, TypeScript, JavaScript, C++, SQL</p>
+            <p><strong>Backend</strong> FastAPI, Node.js, Express, REST APIs, PostgreSQL, Prisma</p>
+            <p><strong>AI &amp; data</strong> RAG, FAISS, PyTorch, Hugging Face, vLLM, NLI, PySpark, LightGBM</p>
+            <p><strong>Tools</strong> Docker, GitHub Actions, Git, Linux, Jest</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="hobbies" class="section hobbies">
+        <div class="section-heading">
+          <h2>Hobbies</h2>
+        </div>
+        <div class="hobby-row"><h3>Games &amp; chess</h3><p>I like video games with places that feel lived in. Rusty machinery, quiet corners, and a world that looks like someone drew every little thing by hand. I also play chess competitively, and I won some online chess tournaments.</p></div>
+        <div class="hobby-row"><h3>Art &amp; drawing</h3><p>I like drawing, old illustrations, folk-print textures, uneven lines, and artwork that still looks as if a person made it.</p></div>
+        <div class="hobby-row"><h3>Books &amp; music</h3><p>I read when I can, and there is usually music somewhere in the background. I have a soft spot for work with a point of view and a few rough edges left in. I'm also currently learning to play guitar and i know some songs i can play on guitar.</p></div>
+        <div class="hobby-row"><h3>Small collections</h3><p>I collect keychains and currency. Tiny souvenirs, odd designs, and coins and notes that have travelled through lives I’ll never know about.</p></div>
+      </section>
+
+      <section class="contact">
+        <img class="mark mark--knight" src="assets/knight.svg" alt="">
+        <h2>Have a question or an idea?</h2>
+        <p><a href="mailto:shafayatrubath@gmail.com">shafayatrubath@gmail.com</a></p>
+        <div class="contact-links"><a href="https://github.com/infi9itea" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/infi9itea/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span><img class="mark mark--sm" src="assets/castle.svg" alt="">Shafayat Hasanat Rubaiyat</span>
+      <a href="#top">back to top ↑</a>
+    </footer>
+  </div>
+</body>
+</html>

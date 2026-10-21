@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 230" role="img" aria-labelledby="title desc">
+  <title id="title">A rooftop machine, a castle tower and a knight in armour</title>
+  <desc id="desc">An original, quiet line drawing of crooked metal rooftops, a ladder, pipes a little mechanical lookout, a crenellated tower and a knight in armour keeping watch.</desc>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- A few rough-cut birds and a wandering line give the little machine some open sky. -->
+    <g stroke="#4f4c43" stroke-width="1.35">
+      <path d="M18 51 Q23 44 28 50 Q33 44 38 49"/>
+      <path d="M46 34 Q50 28 54 34 Q59 28 64 33"/>
+      <path d="M177 53 Q182 47 187 52 Q192 46 197 51"/>
+    </g>
+    <g stroke="#8a5038" stroke-width="1.8">
+      <path d="M15 186 L35 184 L35 152 L53 145 L53 126 L77 126 L77 102 L93 106 L93 137 L108 137 L108 166 L125 166 L125 148 L147 148 L147 124 L169 120 L169 98 L169 92 L173 92 L173 96 L178 96 L178 92 L183 92 L183 96 L186 96 L186 92 L189 92 L189 155 L207 158 L207 189"/>
+      <path d="M31 154 L46 149 L46 130 L70 130 L70 116 L88 119"/>
+      <path d="M122 150 L140 144 L140 128 L160 124 L160 105 L181 105"/>
+      <path d="M17 190 L212 190"/>
+      <path d="M23 196 L203 196" stroke-width="1.1"/>
+      <path d="M48 182 L48 161 L60 157 L60 182 M54 159 L54 182" stroke-width="1.2"/>
+      <path d="M172 189 L172 166 L190 166 L190 189 M177 168 L177 187 M184 168 L184 187" stroke-width="1.2"/>
+    </g>
+    <g stroke="#73745b" stroke-width="1.8">
+      <path d="M87 138 L87 96 L100 83 L115 96 L115 138"/>
+      <path d="M83 96 L101 78 L119 96"/>
+      <path d="M91 102 L111 102 L111 130 L91 130 Z"/>
+      <path d="M96 107 L106 107 L106 121 L96 121 Z"/>
+      <path d="M100 78 L100 64 L110 64 L110 52 L118 52 L118 37"/>
+      <path d="M115 37 L126 37 L126 44 L118 44"/>
+      <path d="M92 137 L92 150 L110 150 L110 138"/>
+      <path d="M82 149 L121 149 L125 155 L79 155 Z"/>
+      <path d="M100 155 L100 173 L112 173 L112 160"/>
+      <path d="M79 173 L122 173"/>
+      <path d="M76 179 L127 179"/>
+      <path d="M96 181 L96 190 M116 181 L116 190"/>
+    </g>
+    <g stroke="#4f4c43" stroke-width="1.15">
+      <path d="M38 177 L42 173 L42 166 L38 163"/>
+      <path d="M66 185 L66 177 L72 174 L72 185"/>
+      <path d="M146 188 L146 174 L157 171 L157 188"/>
+      <path d="M150 174 L154 174 M150 179 L154 179 M150 184 L154 184"/>
+      <path d="M197 185 L197 173 L202 170 L202 185"/>
+      <path d="M27 201 L32 199 M37 201 L43 199 M60 201 L66 199 M78 201 L84 199 M130 201 L136 199 M165 201 L171 199 M187 201 L193 199"/>
+      <path d="M28 143 L28 137 L35 133 L35 127"/>
+      <path d="M134 116 L134 107 L141 103 L141 94"/>
+      <path d="M142 94 L149 94 L149 101"/>
+      <path d="M179 92 L179 76"/>
+      <path d="M179 76 L191 80 L179 84" fill="#e8d3b0"/>
+      <path d="M177 108 L177 116 M181 108 L181 116" stroke-width="1.3"/>
+      <path d="M75 83 L75 73 L83 69 L89 73 L89 81"/>
+      <path d="M133 161 L136 158 L139 161 L139 165 L133 165 Z"/>
+      <path d="M10 207 L218 207" stroke="#c7bdab"/>
+      <path d="M16 218 C25 212 31 221 41 216 S58 212 67 217 S84 221 91 216" stroke="#80503a" stroke-width="1" opacity=".75"/>
+      <path d="M167 217 L174 215 M181 218 L188 216 M195 217 L201 215" stroke="#73745b" stroke-width="1"/>
+    </g>
+    <g stroke="#80503a" stroke-width="1.1" opacity=".78">
+      <path d="M37 147 L40 145 M39 151 L43 149 M58 140 L62 138 M72 126 L74 122 M144 137 L148 135 M161 119 L165 117 M185 149 L190 148"/>
+      <path d="M95 92 L99 88 M103 89 L106 92 M94 127 L97 125 M104 126 L108 128"/>
+      <path d="M26 183 L29 181 M33 180 L36 178 M176 159 L180 157 M185 160 L189 158"/>
+    </g>
+    <!-- a knight keeping watch on the roof -->
+    <g transform="translate(51 90) scale(.62)" stroke="#2c2a24" stroke-width="2.1">
+<path d="M18 42 V58 M30 42 V58 M14 58 H22 M26 58 H34" />
+<path d="M16 22 L14 42 H34 L32 22 Z" fill="#fffbee"/>
+<path d="M15 34 H33" stroke="#94533d"/>
+<path d="M13 22 H35" />
+<path d="M17 20 V11 C17 4 31 4 31 11 V20 Z" fill="#fffbee"/>
+<path d="M19 12.5 H29 M24 12.5 V20" stroke-width="1.3"/>
+<path d="M24 5 C25 0 31 0 33 4" stroke="#94533d"/>
+<path d="M4 26 H17 V38 C17 44 10.5 48 10.5 48 C10.5 48 4 44 4 38 Z" fill="#fffbee" stroke="#94533d"/>
+<path d="M10.5 28 V45 M5.5 33 H15.5" stroke="#94533d" stroke-width="1.3"/>
+<path d="M32 27 L38 25 M38 25 V59 M34 24 H42" />
+<circle cx="38" cy="21.8" r="1.6" fill="#fffbee"/>
+    </g>
+  </g>
+</svg>

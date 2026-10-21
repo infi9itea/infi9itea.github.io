@@ -162,6 +162,7 @@ nav a { color: var(--muted); font-size: 13px; text-decoration: none; }
   .contact > p:not(.eyebrow) { font-size: 17px; }
   .footer { flex-direction: column; }
 }
+
 /* Keep the small-print editorial, not tiny. */
 .site-title { max-width: none; white-space: nowrap; }
 .eyebrow { font-size: 12px; }
@@ -446,7 +447,9 @@ a:hover { color: var(--rust); }
 .page::before, .page::after, .header::before, .header::after, .contact::before, .machine-note::before { display: none; }
 
 /* labels switch from typewriter to sans caps */
-nav a, .links, .eyebrow, .project-kind, .stack, .project-links, .project-aside, .research-date, .record-row time, .cf-note .stack, .footer, .contact-links, /* masthead */
+nav a, .links, .eyebrow, .project-kind, .stack, .project-links, .project-aside, .research-date, .record-row time, .cf-note .stack, .footer, .contact-links, .aside-label { font-family: var(--sans); }
+
+/* masthead */
 .header { padding: 22px 0 14px; border-top: 6px solid var(--ink); border-bottom: 1px solid var(--ink); align-items: center; }
 .site-title { font-family: var(--sans); font-size: 20px; font-weight: 900; letter-spacing: .02em; text-transform: uppercase; }
 nav { gap: 6px 22px; }

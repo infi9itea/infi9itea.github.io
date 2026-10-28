@@ -769,3 +769,28 @@ nav a[aria-current="page"] { color: var(--rust); text-decoration: underline; tex
 /* "Open to" line: says in one glance what this site is for */
 .open-to { margin: 14px 0 0; font-family: var(--sans); font-size: 14px; line-height: 1.5; color: var(--ink); }
 .open-to strong { margin-right: 6px; color: var(--rust); font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+
+/* hero name: modest, regular-weight serif; still the largest text in the hero */
+.intro h1 { max-width: 100%; font-size: clamp(30px, 3.6vw, 40px); font-weight: 400; line-height: 1.15; letter-spacing: -.02em; text-shadow: 1.5px 1.5px 0 rgba(200, 32, 47, .45); }
+.intro .lead { max-width: 780px; font-size: clamp(20px, 2.4vw, 25px); }
+@media (max-width: 590px) {
+  .intro h1 { font-size: 29px; text-shadow: 1px 1px 0 rgba(200, 32, 47, .45); }
+  .intro .lead { font-size: 21px; }
+}
+
+/* ---- trim pass: fewer ornaments, less repetition ---- */
+/* section label: boxed label on one plain rule (no guilloche band) */
+.section-heading::before { height: 0; margin-top: 0; background: none; border-top: 1px solid var(--ink); }
+/* project plates: no numbered Bangla prefix */
+.project-kind::before { content: none; }
+/* no chessboard strip above the footer */
+.footer::before { display: none; }
+.footer { margin-top: 40px; }
+/* tighter hero so the work starts sooner */
+.intro { padding: 40px 44px 34px; }
+.intro-layout { gap: 22px; }
+.machine-note { width: 170px; }
+@media (max-width: 590px) { .intro { padding: 30px 18px 26px; } }
+
+/* section labels are English only now, so number them with roman numerals */
+.section-heading h2::before { content: "§ " counter(sec, upper-roman); }

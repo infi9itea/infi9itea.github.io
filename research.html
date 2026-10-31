@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research interests, publications and in-progress work in NLP, LLMs, retrieval and human-computer interaction.">
+  <meta name="theme-color" content="#f3ede0">
+  <title>Research | Shafayat Hasanat Rubaiyat</title>
+  <link rel="canonical" href="https://infi9itea.github.io/research.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Research | Shafayat Hasanat Rubaiyat">
+  <meta property="og:description" content="Research interests, publications and in-progress work in NLP, LLMs, retrieval and human-computer interaction.">
+  <meta property="og:url" content="https://infi9itea.github.io/research.html">
+  <meta property="og:image" content="https://infi9itea.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Shafayat Hasanat Rubaiyat, with a hand-drawn rooftop, castle tower and knight">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Research | Shafayat Hasanat Rubaiyat">
+  <meta name="twitter:description" content="Research interests, publications and in-progress work in NLP, LLMs, retrieval and human-computer interaction.">
+  <meta name="twitter:image" content="https://infi9itea.github.io/assets/og-image.png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Shafayat Hasanat Rubaiyat","url":"https://infi9itea.github.io/","image":"https://infi9itea.github.io/assets/portrait.jpg","jobTitle":"Computer Science & Engineering graduate","alumniOf":{"@type":"CollegeOrUniversity","name":"East West University"},"address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"},"knowsAbout":["Natural language processing","Large language models","Retrieval-augmented generation","AI agents","Human-computer interaction"],"sameAs":["https://github.com/infi9itea","https://www.linkedin.com/in/infi9itea/","https://scholar.google.com/citations?user=V1L3dSgAAAAJ&hl=en","https://orcid.org/0009-0002-2202-2596","https://codeforces.com/profile/Centric"]}
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="page">
+<header class="header"><a class="site-title" href="index.html">Shafayat</a><nav aria-label="Main navigation"><a href="index.html">home</a><a href="work.html">work</a><a href="research.html" aria-current="page">research</a><a href="resume.html">resume</a><a href="about.html">about</a><a href="contact.html">contact</a></nav></header>
+<main id="main">
+<section class="pane">
+        <h1 class="page-title">Research notes</h1>
+        <h3 class="sub">Research interests</h3>
+        <div class="rgroup">
+          <h4>NLP, LLMs and retrieval</h4>
+          <p>Language systems that retrieve evidence, reason over it, and work alongside people.</p>
+          <ul>
+            <li><strong>Retrieval-augmented generation.</strong> Starting point: RAGTOP, where I compared index types for retrieval evaluation.</li>
+            <li><strong>Multilingual NLP and factuality.</strong> Starting points: Probaho and Olikbochon, for English, Bangla and Banglish.</li>
+            <li><strong>Efficient routing between model sizes.</strong> Starting point: SC-GRC, listed below.</li>
+            <li><strong>AI agents.</strong> Systems that gather evidence and act on it with people in the loop.</li>
+          </ul>
+        </div>
+        <div class="rgroup">
+          <h4>Human-computer interaction</h4>
+          <p>How people inspect evidence, calibrate trust, and stay in control of AI systems.</p>
+          <ul>
+            <li><strong>Human-centered evaluation.</strong> Asking whether recommendations improve user experience, not only system performance. Starting point: my early recommender-system work, listed below.</li>
+          </ul>
+        </div>
+        <div class="rgroup">
+          <h4>Algorithms and theory</h4>
+          <p>Algorithms and theoretical computer science for search and reasoning.</p>
+        </div>
+
+        <h3 class="sub">Publications</h3>
+        <article class="research-entry">
+          <span class="research-date">2025</span>
+          <div>
+            <h3><a href="https://doi.org/10.1109/ICCIT68739.2025.11491434" target="_blank" rel="noopener noreferrer">A Hybrid Deep Learning Framework for 44-Class Brain Tumor Classification</a></h3>
+            <p class="venue">28th ICCIT, IEEE conference publication. First author.</p>
+            <p>A ResNet50-DenseNet121 hybrid CNN for classifying brain tumours from MRI images. It reached 98.69% test accuracy on a 44-class setup using 16,236 augmented MRI images.</p>
+            <p class="project-links"><a href="https://doi.org/10.1109/ICCIT68739.2025.11491434" target="_blank" rel="noopener noreferrer">DOI</a><a href="https://github.com/infi9itea/btc44" target="_blank" rel="noopener noreferrer">code</a></p>
+          </div>
+        </article>
+
+        <h3 class="sub">In progress</h3>
+        <article class="research-entry">
+          <span class="research-date">unpublished</span>
+          <div>
+            <h3>SC-GRC: routing between small and large fine-tuned models</h3>
+            <p>A follow-up to the thesis, unpublished. I fine-tuned Qwen2.5-3B and 7B with QLoRA on about 10,900 English, Bangla and Banglish question-answer pairs. A router decides, query by query, whether the small model's answer is good enough or the larger model should answer, using self-consistency, retrieval signals and a semantic cache. The benchmark has 333 queries (111 questions in three languages, across 37 categories) and compares five systems. I am re-validating the experiments before reporting results.</p>
+          </div>
+        </article>
+        <article class="research-entry">
+          <span class="research-date">early-stage</span>
+          <div>
+            <h3>Human-Centric Recommendation Systems for Research Discovery</h3>
+            <p>I'm exploring how recommendation models can support discovery on Researchar, a live platform for researchers. The planned evaluation compares a candidate recommender with baselines using in-platform feedback (satisfaction, trust and perceived relevance) and behavioral signals such as click history.</p>
+          </div>
+        </article>
+      </section>
+</main>
+<footer class="footer"><span><img class="mark mark--sm" src="assets/castle.svg" alt="">© 2026 · Dhaka, Bangladesh</span><span class="catch">next: <a href="resume.html">resume →</a></span></footer>
+</div>
+</body>
+</html>
